@@ -16,7 +16,7 @@ const Portfolio = () => {
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution built with Laravel and Vue.js, featuring real-time inventory management and payment integration.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
-      technologies: ['Laravel', 'Vue.js', 'MySQL', 'AWS'],
+      technologies: ['Laravel', 'Vue.js', 'MySQL'],
       live: 'https://titanspet.pk/',
       featured: true,
     },
