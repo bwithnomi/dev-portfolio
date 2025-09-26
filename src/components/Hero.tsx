@@ -1,9 +1,18 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react'
 
 const Hero = () => {
+  const handleDownloadCV = () => {
+    const link = document.createElement('a')
+    link.href = '/cv.pdf'
+    link.download = 'Ahad_Butt_CV.pdf'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
@@ -99,8 +108,10 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="glass-card text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-white hover:bg-opacity-10"
+              onClick={handleDownloadCV}
+              className="glass-card text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:bg-white hover:bg-opacity-10 flex items-center gap-2"
             >
+              <Download className="h-5 w-5" />
               Download CV
             </motion.button>
           </motion.div>
@@ -112,9 +123,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex justify-center space-x-6"
           >
-          
+           
             <motion.a
-              href="https://www.linkedin.com/in/ahad-butt-283655211"
+              href="https://www.linkedin.com/in/ahad-butt-283655211/"
               whileHover={{ scale: 1.2, y: -5 }}
               className="glass-card p-3 rounded-full hover:bg-blue-600 transition-all duration-300"
             >

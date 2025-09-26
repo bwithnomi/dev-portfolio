@@ -108,6 +108,7 @@ const Navigation = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
+                  onClick={() => window.location.href = 'mailto:ahadbutt319@gmail.com'}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors duration-300 mt-4"
                 >
                   Let's Talk

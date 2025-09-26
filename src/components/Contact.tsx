@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useState } from 'react'
+// Removed EmailJS import - using API route instead
 import { 
   Mail, 
   Phone, 
@@ -11,7 +12,9 @@ import {
   Github, 
   Linkedin, 
   Twitter,
-  MessageCircle
+  MessageCircle,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react'
 
 const Contact = () => {
@@ -28,6 +31,8 @@ const Contact = () => {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [statusMessage, setStatusMessage] = useState('')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -39,13 +44,35 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus('idle')
+    setStatusMessage('')
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Send email using our API route
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setStatusMessage('Thank you for your message! I\'ll get back to you within 24 hours.')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        throw new Error(result.error || 'Failed to send email')
+      }
+    } catch (error) {
+      console.error('Error sending email:', error)
+      setSubmitStatus('error')
+      setStatusMessage('Sorry, there was an error sending your message. Please try again or contact me directly at ahadbutt319@gmail.com')
+    } finally {
       setIsSubmitting(false)
-      alert('Thank you for your message! I\'ll get back to you soon.')
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 2000)
+    }
   }
 
   const contactInfo = [
@@ -71,27 +98,15 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: Github,
-      name: 'GitHub',
-      url: '#',
-      color: 'hover:text-gray-400'
-    },
-    {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: '#',
+      url: 'https://www.linkedin.com/in/ahad-butt-283655211/',
       color: 'hover:text-blue-400'
-    },
-    {
-      icon: Twitter,
-      name: 'Twitter',
-      url: '#',
-      color: 'hover:text-blue-300'
     },
     {
       icon: MessageCircle,
       name: 'Discord',
-      url: '#',
+      url: 'mailto:ahadbutt319@gmail.com',
       color: 'hover:text-purple-400'
     }
   ]
@@ -293,6 +308,26 @@ const Contact = () => {
                   </motion.button>
                 </motion.div>
               </form>
+              
+              {/* Status Message */}
+              {submitStatus !== 'idle' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`mt-6 p-4 rounded-lg flex items-center space-x-3 ${
+                    submitStatus === 'success' 
+                      ? 'bg-green-900/20 border border-green-500/30 text-green-400' 
+                      : 'bg-red-900/20 border border-red-500/30 text-red-400'
+                  }`}
+                >
+                  {submitStatus === 'success' ? (
+                    <CheckCircle className="h-5 w-5 flex-shrink-0" />
+                  ) : (
+                    <AlertCircle className="h-5 w-5 flex-shrink-0" />
+                  )}
+                  <span className="text-sm">{statusMessage}</span>
+                </motion.div>
+              )}
             </div>
           </motion.div>
         </div>
