@@ -22,20 +22,20 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Task Management App',
+      title: 'Solify',
       description: 'Modern task management application with real-time collaboration features built with React and Laravel.',
-      image: './medhr.png',
-      technologies: ['React', 'Laravel', 'MySQL', 'Socket.io', 'AWS'],
-      live: 'https://medaxishr.com/',
+      image: './solify.png',
+      technologies: ['React', 'Next', 'Blockchain', 'Solana', 'Vercel'],
+      live: 'https://solify-beige.vercel.app/',
       featured: true,
     },
     {
       id: 3,
-      title: 'Appointly',
+      title: 'CodeHub',
       description: 'Appointment booking system for businesses.',
-      image: './appiontly.png',
-      technologies: ['Next.js', 'TypeScript', 'Chart.js', 'AWS', 'Tailwind CSS', 'MySQL'],
-      live: 'https://appointly.co.uk/',
+      image: './codehub.png',
+      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'AWS', 'Tailwind CSS'],
+      live: 'https://code-hub-three-chi.vercel.app',
       featured: true,
     },
     {
@@ -127,7 +127,7 @@ const Portfolio = () => {
                         href={project.live}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="glass-card p-3 rounded-full hover:bg-blue-600 transition-colors"
+                        className="glass-card p-3 rounded-full hover:bg-indigo-600 transition-colors"
                       >
                         <Github className="h-6 w-6" />
                       </motion.a>
@@ -135,7 +135,7 @@ const Portfolio = () => {
                         href={project.live}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="glass-card p-3 rounded-full hover:bg-blue-600 transition-colors"
+                        className="glass-card p-3 rounded-full hover:bg-indigo-600 transition-colors"
                       >
                         <ExternalLink className="h-6 w-6" />
                       </motion.a>
@@ -152,7 +152,7 @@ const Portfolio = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-blue-600 bg-opacity-20 text-blue-300 text-sm rounded-full"
+                          className="px-3 py-1 bg-indigo-600 bg-opacity-20 text-indigo-300 text-sm rounded-full"
                         >
                           {tech}
                         </span>
@@ -197,7 +197,7 @@ const Portfolio = () => {
                           href={project.live}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="glass p-2 rounded-full hover:bg-blue-600 transition-colors"
+                        className="glass p-2 rounded-full hover:bg-indigo-600 transition-colors"
                       >
                         <Github className="h-4 w-4" />
                       </motion.a>
@@ -205,7 +205,7 @@ const Portfolio = () => {
                         href={project.live}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-                        className="glass p-2 rounded-full hover:bg-blue-600 transition-colors"
+                        className="glass p-2 rounded-full hover:bg-indigo-600 transition-colors"
                       >
                         <Eye className="h-4 w-4" />
                       </motion.a>
@@ -222,7 +222,7 @@ const Portfolio = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 bg-blue-600 bg-opacity-20 text-blue-300 text-xs rounded"
+                          className="px-2 py-1 bg-indigo-600 bg-opacity-20 text-indigo-300 text-xs rounded"
                         >
                           {tech}
                         </span>
@@ -244,7 +244,7 @@ const Portfolio = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="glass-card px-8 py-3 rounded-full text-white hover:bg-blue-600 transition-all duration-300"
+            className="glass-card px-8 py-3 rounded-full text-white hover:bg-indigo-600 transition-all duration-300"
           >
             View More Projects
           </motion.button>

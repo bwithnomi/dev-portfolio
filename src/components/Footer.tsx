@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-white mb-4">
-             Ahad butt
+             Noman Malik
             </h3>
             <p className="text-gray-400 mb-6 max-w-md">
               Full-stack web developer specializing in modern web technologies. 
@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.linkedin.com/in/ahad-butt-283655211/"
+                href="https://www.linkedin.com/in/bwithnomi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
@@ -31,7 +31,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:ahadbutt319@gmail.com"
+                href="mailto:noman.tech777@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
                 aria-label="Email"
               >
@@ -73,10 +73,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Technologies</h4>
             <ul className="space-y-2">
-              <li className="text-gray-400">Laravel</li>
-              <li className="text-gray-400">React</li>
-              <li className="text-gray-400">Vue.js</li>
               <li className="text-gray-400">Node.js</li>
+              <li className="text-gray-400">React</li>
+              <li className="text-gray-400">Laravel</li>
+              <li className="text-gray-400">Vue.js</li>
               <li className="text-gray-400">AWS</li>
               <li className="text-gray-400">TypeScript</li>
             </ul>
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Ahad Butt. All rights reserved.
+              © {currentYear} Noman Malik. All rights reserved.
             </p>
           </div>
         </div>

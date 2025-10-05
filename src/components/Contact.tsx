@@ -14,7 +14,10 @@ import {
   Twitter,
   MessageCircle,
   CheckCircle,
-  AlertCircle
+  AlertCircle,
+  GithubIcon,
+  XIcon,
+  TwitterIcon
 } from 'lucide-react'
 
 const Contact = () => {
@@ -69,7 +72,7 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending email:', error)
       setSubmitStatus('error')
-      setStatusMessage('Sorry, there was an error sending your message. Please try again or contact me directly at ahadbutt319@gmail.com')
+      setStatusMessage('Sorry, there was an error sending your message. Please try again or contact me directly at noman.tech777@gmail.com')
     } finally {
       setIsSubmitting(false)
     }
@@ -79,14 +82,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'ahadbutt319@gmail.com',
-      link: 'mailto:ahadbutt319@gmail.com'
+      value: 'noman.tech777@gmail.com',
+      link: 'mailto:noman.tech777@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+92 3104414588',
-      link: 'tel:+923104414588'
+      value: '+92 3325671932',
+      link: 'tel:+923325671932'
     },
     {
       icon: MapPin,
@@ -100,14 +103,20 @@ const Contact = () => {
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/ahad-butt-283655211/',
+      url: 'https://www.linkedin.com/in/bwithnomi/',
       color: 'hover:text-blue-400'
     },
     {
-      icon: MessageCircle,
-      name: 'Discord',
-      url: 'mailto:ahadbutt319@gmail.com',
-      color: 'hover:text-purple-400'
+      icon: GithubIcon,
+      name: 'Github',
+      url: 'https://github.com/bwithnomi',
+      color: 'hover:text-black'
+    },
+    {
+      icon: TwitterIcon,
+      name: 'Twitter',
+      url: 'https://x.com/bwithnomi',
+      color: 'hover:text-white'
     }
   ]
 
@@ -153,7 +162,7 @@ const Contact = () => {
                     className="flex items-center space-x-4 p-4 rounded-lg hover:bg-white hover:bg-opacity-5 transition-all duration-300"
                   >
                     <div className="glass p-3 rounded-full">
-                      <info.icon className="h-6 w-6 text-blue-400" />
+                      <info.icon className="h-6 w-6 text-indigo-400" />
                     </div>
                     <div>
                       <div className="text-white font-semibold">{info.title}</div>
@@ -216,7 +225,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                      className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
                       placeholder="Your Name"
                     />
                   </motion.div>
@@ -236,7 +245,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                      className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
                       placeholder="your.email@example.com"
                     />
                   </motion.div>
@@ -257,7 +266,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
                     placeholder="Project Discussion"
                   />
                 </motion.div>
@@ -277,7 +286,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 glass rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300 resize-none"
                     placeholder="Tell me about your project..."
                   />
                 </motion.div>
@@ -292,7 +301,7 @@ const Contact = () => {
                     disabled={isSubmitting}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
+                    className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
                   >
                     {isSubmitting ? (
                       <>
@@ -352,7 +361,7 @@ const Contact = () => {
                 href="#portfolio"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300"
+                className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition-colors duration-300"
               >
                 View My Work
               </motion.a>

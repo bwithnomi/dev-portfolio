@@ -40,9 +40,9 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <Code2 className="h-8 w-8 text-blue-400" />
+            <Code2 className="h-8 w-8 text-indigo-400" />
             <span className="text-xl font-bold gradient-text-blue">
-             Ahad Butt
+             Noman Malik
             </span>
           </motion.div>
 
@@ -59,13 +59,13 @@ const Navigation = () => {
                 className="text-gray-300 hover:text-white transition-colors duration-300 relative group"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
               </motion.a>
             ))}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition-colors duration-300"
+              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-full transition-colors duration-300"
             >
               Let's Talk
             </motion.button>
@@ -108,8 +108,8 @@ const Navigation = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  onClick={() => window.location.href = 'mailto:ahadbutt319@gmail.com'}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition-colors duration-300 mt-4"
+                  onClick={() => window.location.href = 'mailto:noman.tech777@gmail.com'}
+                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full transition-colors duration-300 mt-4"
                 >
                   Let's Talk
                 </motion.button>

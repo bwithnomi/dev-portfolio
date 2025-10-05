@@ -31,7 +31,7 @@ const Services = () => {
       icon: Server,
       title: 'Backend Development',
       description: 'Robust server-side applications and APIs using Laravel, Node.js, and Express with scalable architecture.',
-      features: ['Laravel Framework', 'Node.js & Express', 'RESTful APIs', 'Microservices', 'Authentication'],
+      features: ['Node.js & Express','Laravel Framework',  'RESTful APIs', 'Microservices', 'Authentication'],
       color: 'from-green-500 to-emerald-500'
     },
     {

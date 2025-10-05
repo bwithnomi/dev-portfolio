@@ -18,12 +18,16 @@ const About = () => {
   ]
 
   const skills = [
-    'Laravel Development',
     'React & Next.js',
+    'Node.js, Express & Nest.js',
+    'Laravel Development',
     'Vue.js & Nuxt.js',
-    'Node.js & Express',
+    'MongoDB & PostgreSQL',
+    'Redis & Kafka',
+    'Docker & Kubernetes',
+    'Blockchain',
     'AWS Cloud Services',
-    'Database Design',
+    'System Design',
     'API Development',
     'DevOps & CI/CD',
   ]
@@ -39,7 +43,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text-blue">About</span> Me
+            <span className="gradient-text-indigo">About</span> Me
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Passionate web developer with expertise in modern technologies and cloud solutions
@@ -103,7 +107,7 @@ const About = () => {
                   whileHover={{ scale: 1.05 }}
                   className="glass-card p-6 rounded-xl text-center hover-lift"
                 >
-                  <stat.icon className="h-8 w-8 text-blue-400 mx-auto mb-3" />
+                  <stat.icon className="h-8 w-8 text-indigo-400 mx-auto mb-3" />
                   <div className="text-3xl font-bold text-white mb-2">
                     {stat.value}
                   </div>
@@ -124,26 +128,26 @@ const About = () => {
               <h4 className="text-xl font-bold text-white mb-4">Experience</h4>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2"></div>
+                  <div className="w-3 h-3 bg-indigo-400 rounded-full mt-2"></div>
                   <div>
-                    <h5 className="text-white font-semibold">Senior Full-Stack Developer At Vigorous Technologies</h5>
-                    <p className="text-gray-400 text-sm">2023 - Present</p>
+                    <h5 className="text-white font-semibold">Senior Full-Stack Developer At Developers Studio</h5>
+                    <p className="text-gray-400 text-sm">2022 - Present</p>
                     <p className="text-gray-300 text-sm">Leading development of enterprise web applications</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2"></div>
+                  <div className="w-3 h-3 bg-indigo-400 rounded-full mt-2"></div>
                   <div>
-                    <h5 className="text-white font-semibold">Full-Stack Developer At Techhive Solution</h5>
-                    <p className="text-gray-400 text-sm">2020 - 2022</p>
+                    <h5 className="text-white font-semibold">Full-Stack Software Engineer At Techhive Solution</h5>
+                    <p className="text-gray-400 text-sm">2021 - 2022</p>
                     <p className="text-gray-300 text-sm">Developed scalable web solutions for various clients</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mt-2"></div>
+                  <div className="w-3 h-3 bg-indigo-400 rounded-full mt-2"></div>
                   <div>
-                    <h5 className="text-white font-semibold">Junior Web Developer At WTechSol</h5>
-                    <p className="text-gray-400 text-sm">2019 - 2020</p>
+                    <h5 className="text-white font-semibold">Associate Software Engineer At WTechSol</h5>
+                    <p className="text-gray-400 text-sm">2019 - 2021</p>
                     <p className="text-gray-300 text-sm">Started journey in web development</p>
                   </div>
                 </div>

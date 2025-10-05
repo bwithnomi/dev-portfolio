@@ -56,7 +56,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1e3a8a" />
       </head>
       <body className={`${inter.className} bg-gray-900 text-white antialiased`}>
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900">
           <Navigation />
           <main>{children}</main>
           <Footer />

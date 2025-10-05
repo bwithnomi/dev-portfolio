@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         from: 'Portfolio Contact <noreply@yourdomain.com>',
-        to: ['ahadbutt319@gmail.com'],
+        to: ['noman.tech777@gmail.com'],
         reply_to: email,
         subject: `Portfolio Contact: ${subject}`,
         html: `

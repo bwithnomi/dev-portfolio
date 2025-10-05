@@ -24,7 +24,9 @@ import {
   SiSass,
   SiWebpack,
   SiJest,
-  SiCypress
+  SiCypress,
+  SiNestjs,
+  SiApachekafka
 } from 'react-icons/si'
 
 const TechStack = () => {
@@ -40,10 +42,10 @@ const TechStack = () => {
       technologies: [
         { name: 'React', icon: SiReact, color: '#61DAFB', level: 95 },
         { name: 'Vue.js', icon: SiVuedotjs, color: '#4FC08D', level: 90 },
-        { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 88 },
+        { name: 'Next.js', icon: SiNextdotjs, color: '#000000', level: 90 },
         { name: 'Nuxt.js', icon: SiNuxtdotjs, color: '#00DC82', level: 85 },
-        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 92 },
-        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 95 },
+        { name: 'TypeScript', icon: SiTypescript, color: '#3178C6', level: 100 },
+        { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E', level: 100 },
         { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4', level: 90 },
         { name: 'Sass', icon: SiSass, color: '#CC6699', level: 85 },
       ]
@@ -52,10 +54,11 @@ const TechStack = () => {
       title: 'Backend',
       description: 'Robust backend solutions and server-side technologies',
       technologies: [
+        { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 100 },
+        { name: 'Express', icon: SiNodedotjs, color: '#000000', level: 100 },
+        { name: 'Nest.js', icon: SiNestjs, color: '#E0234E', level: 95 },
         { name: 'Laravel', icon: SiLaravel, color: '#FF2D20', level: 95 },
-        { name: 'Node.js', icon: SiNodedotjs, color: '#339933', level: 90 },
-        { name: 'PHP', icon: SiPhp, color: '#777BB4', level: 92 },
-        { name: 'Express', icon: SiNodedotjs, color: '#000000', level: 88 },
+        { name: 'PHP', icon: SiPhp, color: '#777BB4', level: 90 },
       ]
     },
     {
@@ -63,19 +66,20 @@ const TechStack = () => {
       description: 'Database management and optimization expertise',
       technologies: [
         { name: 'MySQL', icon: SiMysql, color: '#4479A1', level: 90 },
-        { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791', level: 85 },
-        { name: 'MongoDB', icon: SiMongodb, color: '#47A248', level: 80 },
-        { name: 'Redis', icon: SiRedis, color: '#DC382D', level: 75 },
+        { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791', level: 90 },
+        { name: 'MongoDB', icon: SiMongodb, color: '#47A248', level: 95 },
+        { name: 'Redis', icon: SiRedis, color: '#DC382D', level: 95 },
       ]
     },
     {
       title: 'Cloud & DevOps',
       description: 'Cloud infrastructure and deployment automation',
       technologies: [
-        { name: 'AWS', icon: SiAmazonaws, color: '#FF9900', level: 85 },
-        { name: 'Docker', icon: SiDocker, color: '#2496ED', level: 80 },
-        { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5', level: 70 },
-        { name: 'Git', icon: SiGit, color: '#F05032', level: 90 },
+        { name: 'AWS', icon: SiAmazonaws, color: '#FF9900', level: 95 },
+        { name: 'Docker', icon: SiDocker, color: '#2496ED', level: 100 },
+        { name: 'Kubernetes', icon: SiKubernetes, color: '#326CE5', level: 100 },
+        { name: 'Kafka', icon: SiApachekafka, color: '#000000', level: 95 },
+        { name: 'Git', icon: SiGit, color: '#F05032', level: 100 },
       ]
     },
     {
