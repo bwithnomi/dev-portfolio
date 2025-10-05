@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'Experienced web developer specializing in Node.js, React, Vue.js, Laravel, and AWS. Creating modern, scalable web applications with cutting-edge technologies.',
   keywords: 'web developer, nodejs, react, vue, laravel, aws, portfolio, full stack developer',
   authors: [{ name: 'Noman Malik' }],
-  creator: 'Noman Malik',
+  creator: 'Devs Pub',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="canonical" href="https://dev-portfolio-noman.vercel.app/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e3a8a" />
