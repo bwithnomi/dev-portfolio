@@ -7,24 +7,24 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Professional Web Developer Portfolio | Laravel, React, Vue, Node.js Expert',
-  description: 'Experienced web developer specializing in Laravel, React, Vue.js, Node.js, and AWS. Creating modern, scalable web applications with cutting-edge technologies.',
-  keywords: 'web developer, laravel, react, vue, nodejs, aws, portfolio, full stack developer',
-  authors: [{ name: 'Your Name' }],
-  creator: 'Your Name',
+  title: 'Noman\'s Portfolio | Node.js, React, Vue, Laravel Expert',
+  description: 'Experienced web developer specializing in Node.js, React, Vue.js, Laravel, and AWS. Creating modern, scalable web applications with cutting-edge technologies.',
+  keywords: 'web developer, nodejs, react, vue, laravel, aws, portfolio, full stack developer',
+  authors: [{ name: 'Noman Malik' }],
+  creator: 'Noman Malik',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
+    url: 'https://dev-portfolio-noman.vercel.app/',
     title: 'Professional Web Developer Portfolio',
     description: 'Experienced web developer specializing in Laravel, React, Vue.js, Node.js, and AWS.',
     siteName: 'Web Developer Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Web Developer Portfolio',
+    title: 'Noman\'s Portfolio',
     description: 'Experienced web developer specializing in Laravel, React, Vue.js, Node.js, and AWS.',
-    creator: '@yourtwitter',
+    creator: '@bwithnomi',
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://yourportfolio.com" />
+        <link rel="canonical" href="https://dev-portfolio-noman.vercel.app/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#1e3a8a" />
       </head>
